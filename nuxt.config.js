@@ -23,13 +23,15 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-  ],
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
+  ], 
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/axios' },
     { src: '~/plugins/f-date' },
-    { src: '~/plugins/f-currency' }    
+    { src: '~/plugins/f-currency' },
+    { src: '~/plugins/youtube.client' }     
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -67,6 +69,8 @@ export default {
       xcsrfCookieName: "csrftoken",
       xcsrfHeaderName: "X-CSRFToken"      
   },  
+
+ 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
